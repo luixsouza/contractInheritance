@@ -1,18 +1,30 @@
-## Getting Started
+# AbstractShape Application
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto em Java demonstra a aplicação de herança e polimorfismo utilizando classes abstratas e interfaces para representar diferentes formas geométricas.
 
-## Folder Structure
+## Sobre o Projeto
 
-The workspace contains two folders by default, where:
+O programa define formas geométricas abstratas e concretas, permitindo o cálculo da área de círculos e retângulos, além de exibir suas cores. O objetivo é mostrar como utilizar conceitos de POO (Programação Orientada a Objetos) como herança e polimorfismo.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Estrutura do Projeto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Pacote `model.entities`**: Contém as entidades que representam as formas geométricas:
+  - `AbstractShape`: Classe abstrata que define propriedades comuns (ex.: cor).
+  - `Circle`: Classe concreta que representa um círculo.
+  - `Rectangle`: Classe concreta que representa um retângulo.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **Pacote `model.enums`**: Contém a enumeração:
+  - `Color`: Define as cores disponíveis (ex.: BLACK, WHITE).
 
-## Dependency Management
+- **Pacote `application`**: Contém a classe principal `App` que executa o programa.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Funcionalidades
+
+- Criação de formas geométricas com cor e dimensões específicas.
+- Cálculo da área das formas.
+- Exibição das propriedades das formas (cor e área).
+
+### Exemplo de Saída
+
+![Demonstração](./src/assets/result.png)
+
